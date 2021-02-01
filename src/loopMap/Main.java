@@ -15,7 +15,6 @@ public class Main {
 			tempNum = scanner.nextInt();
 			numbers.add(tempNum);
 		}
-		scanner.close();
 		
 		tempNum = numbers.get(0);
 		int sum = tempNum;
@@ -36,5 +35,12 @@ public class Main {
 		}
 		
 		System.out.println("Sum: " + sum + "\tProduct: " + product + "\tLargest: " + largest + "\tSmallest: " + smallest);
+		
+		HashMap<String, String> car = new HashMap<>();
+		car.put("Camry", "Toyota");
+		car.put("F150", "Ford");
+		car.put("Camero", "Chevrolet");
+		car.put("Malibu", "Chevrolet");
+		car.put("Charger", "Dodge");
 	}
 }
