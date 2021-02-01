@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		ArrayList<Integer> numbers = new ArrayList<>();
 		int tempNum = 0;
 		
 		System.out.println("Part 1: Please enter 5 numbers.");
@@ -42,5 +42,15 @@ public class Main {
 		car.put("Camero", "Chevrolet");
 		car.put("Malibu", "Chevrolet");
 		car.put("Charger", "Dodge");
+		
+		System.out.print("Part 2: What car (model) are you looking for? ");
+		String model = scanner.next();
+		if (car.containsKey(model)) {
+			System.out.println("Oh, you're looking for a " + model + "? Our " + car.get(model) + " selection is right over here...\nGoodbye!");
+		} else {
+			System.out.println("Sorry, we do not have that model available. Check back later!\nGoodbye!");
+		}
+		
+		scanner.close();
 	}
 }
